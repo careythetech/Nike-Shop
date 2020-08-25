@@ -1,17 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
-import data from './data'
+import HomeScreen from './components/HomeScreen';
+import ProductScreen from './components/ProductScreen';
+
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="grid-container">
         <header className= 'header'>
             <div className="brand">
                 <button>
                     &#9776;
                 </button>
-                <a href="index.html">NikeShop</a>
+                <Link to='/'>NIKE SHOP</Link>
             </div>
             <div className='header-links'>
                 <a href="cart">Cart</a>
@@ -34,25 +38,13 @@ function App() {
         </aside> 
         <main className='main'>
             <div className='content'>
-                <ul className='products'>
-                  {
-                    data.products.map(products=>        
-                    <li>
-                      <div className='product'></div>
-                      <img className="product-image" src={products.image}alt="product"/>
-                      <div className='product-name'>
-                          <a href="product.html">{products.name}</a>
-                          </div>
-                      <div className='product-brand'>{products.brand}</div>
-                      <div className="product-price">{products.price}</div>
-                      <div className="product-rating">{products.rating} Stars ({products.numReview})</div>
-                  </li>)
-                  }
-                </ul>
+              <Route path='/products/:id' component={ProductScreen}/>
+              <Route path='/' exact={true} component={HomeScreen} />
             </div>
         </main>
         <footer className='footer'> All Rights Reserve</footer>
         </div>
+        </BrowserRouter>
   );
 }
 

@@ -1,6 +1,7 @@
 export default  {
     products: [
     {
+        id: '1',
         name: "Slim Hoodies",
         category: 'Hoodie',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -10,6 +11,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '2',
         name: " Nike Fit Shirt",
         category: 'Shirt',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -19,6 +21,7 @@ export default  {
         numReviews: 10
     },
     {
+        id: '3',
         name: "Nike Sweatpants",
         category: 'Pants',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -28,6 +31,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '4',
         name: "Slim Hoodies",
         category: 'Hoodie',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -37,6 +41,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '5',
         name: " Nike Fit Shirt",
         category: 'Shirt',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -46,6 +51,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '6',
         name: "Nike Sweatpants",
         category: 'Pants',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -55,6 +61,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '7',
         name: "Slim Hoodies",
         category: 'Hoodie',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -64,6 +71,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '8',
         name: " Nike Fit Shirt",
         category: 'Shirt',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -73,6 +81,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '9',
         name: "Nike Sweatpants",
         category: 'Pants',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
@@ -82,6 +91,7 @@ export default  {
         numReviews:10
     },
     {
+        id: '10',
         name: "Slim Hoodies",
         category: 'Hoodie',
         image: './images/sportswear-mens-full-zip-hoodie-b0XPwr.jpg',
