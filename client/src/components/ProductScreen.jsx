@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import data from '../data';
 
-export default function ProductScreen(props) {
+function ProductScreen(props) {
+    console.log(props.match.params.id)
+    const product = data.products.find(x => x.id === props.match.params.id)
     return (
         <div>
-            ProductScreen
+            <h1>{product.name}</h1>
         </div>
     )
 }
+export default ProductScreen
 
