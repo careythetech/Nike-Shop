@@ -1,13 +1,10 @@
 
 body {
   font-family: 'Courier New', Courier, monospace 1.6rem;
-  height: 100vh;
   margin: 0;
 }
 
-#root {
-  height: 100%;
-}
+
 .grid-container{
   display: grid;
   grid-template-areas: 
@@ -54,6 +51,7 @@ body {
   align-items: center;
   background-color: black;
   color: white;
+  
 }
 a {
   text-decoration: none;
@@ -123,3 +121,73 @@ a {
 .sidebar .open{
   transform: translateX(0)
 } */
+
+/* Product Details  */
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.nikepic{
+  width: 500px;
+  padding-bottom: 0%;
+  height: 10%;
+}
+
+.details-image{
+  margin: 40px;
+
+
+}
+.detail-info{
+  text-align: center;
+  margin-top: 7%;
+}
+
+.detail-info ul, .details-action ul{
+  list-style-type: none;
+  padding: 0;
+}
+.detail-info ul, .details-action ul {
+    margin-bottom: 1rem;
+}
+.details-action{
+  border: .1rem black solid;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  margin-top:10%;
+  margin: 100px;
+  width: 300px;
+}
+
+.detail-name{
+  padding-left: 191px;
+
+}
+.details-action ul li:last-child button{
+  display: flex;
+  flex-direction: column;
+  border: 4rem;
+  padding: 20px;
+  margin-left: 100px;
+  margin-top: 20px;
+  /* margin-top: 0px; */
+  background: #ffffff;
+  cursor: pointer;
+  border: .1rem black solid;
+  border-radius: 0.5rem;
+  width: 180px;
+  align-items: center;
+  margin-left: 61px;
+}
+
+.details-action ul{
+  display: flex;
+  flex-direction: column;
+}
+.details-action ul li:last-child button:hover{
+background: wheat;
+}

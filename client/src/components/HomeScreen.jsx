@@ -1,19 +1,40 @@
-import React from 'react'
-import data from '../data';
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-export default function HomeScreen(props) {
+import axios from 'axios'
+
+export default class HomeScreen extends Component {
+
+    state= {
+        products: []
+    }
+    getList = () => {
+        axios.get('/api/products/')
+        .then((response) => {
+        this.setState({
+                products: response.data,
+            });
+        });
+    }
+
+    componentDidMount() {
+        this.getList();
+    }
+
+    render() {
     return (
         <div>
             <ul className='products'>
                 {
-                    data.products.map(products =>
-                        <li>
+                    this.state.products.map(products =>
+                        <li key={products.id}>
                             <div className='product'></div>
                             <Link to={`/products/${products.id}`}>
-                            <img className="product-image" src={products.image} alt="product" />
+                            <img className="product-image" 
+                            src={products.image} alt="product" />
                             </Link>
                             <div className='product-name'>
-                                <Link to={`/products/${products.id}`}>{products.name}</Link>
+                                <Link to={`/products/${products.id}`}>
+                                    {products.name}</Link>
                             </div>
                             <div className='product-brand'>{products.brand}</div>
                             <div className="product-price">{products.price}</div>
@@ -23,5 +44,6 @@ export default function HomeScreen(props) {
             </ul>
         </div>
     )
+    }
 }
 

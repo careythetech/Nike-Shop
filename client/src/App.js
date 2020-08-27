@@ -22,7 +22,7 @@ function App() {
                 <a href="signin">Sign In</a>
             </div>
         </header>
-        <aside className='sidebar'>
+        {/* <aside className='sidebar'>
             <h3>Shopping List</h3>
             <ul>
                 <li>
@@ -35,7 +35,7 @@ function App() {
         </aside>
         <aside>
             Shopping Categories
-        </aside> 
+        </aside>  */}
         <main className='main'>
             <div className='content'>
               <Route path='/products/:id' component={ProductScreen}/>
